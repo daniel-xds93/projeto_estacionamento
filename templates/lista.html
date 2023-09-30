@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Lista de veículos</title>
+        <style type="text/css">
+
+            table, tr, th, td{
+                border: 1px solid #000000;
+            }
+
+        </style>
+    </head>
+
+    <body>  
+
+        <!-- Aqui é o meu comentario -->
+        <h2>{{ tituloPagina }}</h2> 
+
+        {# aqui é  meu comenttario #}
+
+        <!-- a linha abaixo inicia uma tabela -->
+        <table>
+
+            <!-- a linha abaixo cria uma linha -->
+            <tr>
+                <th>Veículo</th>
+                <th>Cor</th>
+            </tr>
+            
+            <!-- a linha abaixo cria uma estrutura python -->
+            {% for carro in carros  %}
+            <tr>
+                <td>{{carro}}</td>
+            </tr>
+            {% endfor %}
+
+
+            <!-- 
+
+            comentei porque quero os dados vindo do python
+
+            <tr>
+                <td>Gol</td>
+                <td>Preto</td>
+            </tr>
+
+            <tr>
+                <td>Corsa</td>
+                <td>Roxo</td>
+            </tr>
+            -->
+
+        </table>
+
+    </body>
+
+</html>
