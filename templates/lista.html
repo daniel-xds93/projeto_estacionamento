@@ -24,14 +24,19 @@
 
             <!-- a linha abaixo cria uma linha -->
             <tr>
+                <th>Placa</th>
                 <th>Veículo</th>
                 <th>Cor</th>
+                <th>Proprietario</th>
             </tr>
             
             <!-- a linha abaixo cria uma estrutura python -->
             {% for carro in carros  %}
             <tr>
-                <td>{{carro}}</td>
+                <td>{{ carro.placa }}</td>
+                <td>{{ carro.modelo }}</td>
+                <td>{{ carro.cor }}</td>
+                <td>{{ carro.proprietario }}</td>
             </tr>
             {% endfor %}
 
